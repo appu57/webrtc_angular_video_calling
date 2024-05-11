@@ -1,0 +1,20 @@
+<div id="video-chat-form">
+    <h2 class="header-text">Video Chat Application</h2>
+    <div class="peer-video-application-container">
+        <input type="text" id="roomName" placeholder="Enter the room name">
+        <div class="left-container">
+            <video id="user-video"></video>
+        </div>
+        <div class="right-container">
+            <video id="peer-video"></video>
+        </div>
+        <div class="buttons">
+            <button class="btn btn-primary" id="mute" (click)="muteUserMicrophone()">Mute</button>
+            <button class="btn btn-danger" id="leave" (click)="leaveCall()">Leave</button>
+            <button class="btn btn-success" id="hide" (click)="hideCamera()">Hide</button>
+
+
+        </div>
+    </div>
+    <button id="join" (click)="joinCall()">Join</button>
+</div>
